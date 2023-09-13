@@ -3,6 +3,7 @@ An Iterative secure banking system consisting of a bank server and multiple clie
 
 Each bank user can transfer money to another user. The bank server maintains a file “passwd” that stores users’ ID and hashed passwords. Passwords are hashed using SHA1 or MD5.
 The bank server maintains a file “balance”, which stores the balance of the account of each user
+
 1: The client connects to the bank server.
 2: The client prompts the user to enter his/her ID and password.
 3: The client generates a symmetric key K, sends E(Kpub, K) and E(K, ID||password) to the bank server, where id and password are the user’s ID and password entered, respectively.
